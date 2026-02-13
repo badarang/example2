@@ -8,6 +8,7 @@ namespace RhythmGame
         [SerializeField] private RhythmManager _rhythmManager;
         [SerializeField] private ObjectPooler _objectPooler;
         [SerializeField] private ChartData _chartData;
+        [SerializeField] private JudgeManager _judgeManager; // 추가
         
         [Header("Settings")]
         [SerializeField] private float _spawnAdvanceTime = 2.0f; // 노트가 판정선에 닿기 몇 초 전에 생성할지
@@ -74,7 +75,7 @@ namespace RhythmGame
                 NoteController controller = noteObj.GetComponent<NoteController>();
                 if (controller != null)
                 {
-                    controller.Initialize(noteData, _rhythmManager, _objectPooler, _scrollSpeed);
+                    controller.Initialize(noteData, _rhythmManager, _objectPooler, _scrollSpeed, _judgeManager);
                 }
             }
         }

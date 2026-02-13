@@ -11,24 +11,30 @@ namespace RhythmGame
             public string tag;
             public GameObject prefab;
             public int size;
+            public Transform parentTransform; // [추가] 특정 부모 아래 생성하고 싶을 때 지정
         }
 
         [SerializeField] private List<Pool> _pools;
         private Dictionary<string, Queue<GameObject>> _poolDictionary;
+        private Dictionary<string, Transform> _poolParents; // 태그별 부모 저장
 
         private void Awake()
         {
             _poolDictionary = new Dictionary<string, Queue<GameObject>>();
+            _poolParents = new Dictionary<string, Transform>();
 
             foreach (Pool pool in _pools)
             {
                 Queue<GameObject> objectPool = new Queue<GameObject>();
+                
+                // 부모 설정: 지정된 부모가 있으면 사용, 없으면 ObjectPooler 자신을 사용
+                Transform parent = pool.parentTransform != null ? pool.parentTransform : transform;
+                _poolParents[pool.tag] = parent;
 
                 for (int i = 0; i < pool.size; i++)
                 {
-                    GameObject obj = Instantiate(pool.prefab);
+                    GameObject obj = Instantiate(pool.prefab, parent);
                     obj.SetActive(false);
-                    obj.transform.SetParent(transform); // 계층 구조 정리
                     objectPool.Enqueue(obj);
                 }
 
@@ -50,23 +56,38 @@ namespace RhythmGame
             objectToSpawn.transform.position = position;
             objectToSpawn.transform.rotation = rotation;
 
-            // 사용 후 다시 큐에 넣어서 재사용 준비 (활성화 상태로 큐에 들어감 -> 비활성화 시점은 개별 객체가 관리하거나 여기서 관리)
-            // 일반적인 큐 방식은 Dequeue -> 사용 -> Enqueue(Return) 이지만, 
-            // 여기서는 간단한 순환 큐 방식으로 구현하여 별도의 Return 호출 없이도 동작하게 할 수 있음.
-            // 하지만 명시적인 Return이 더 안전하므로, 여기서는 Dequeue만 하고 
-            // 객체가 비활성화될 때 ReturnToPool을 호출하는 구조가 이상적임.
-            // 그러나 편의상 순환 구조(Dequeue 후 바로 Enqueue)를 많이 사용하기도 함.
-            // 가이드라인의 "오브젝트 풀링 패턴 적용"을 위해 명시적 Return 기능을 추가함.
-            
-            // _poolDictionary[tag].Enqueue(objectToSpawn); // 순환 방식일 경우 주석 해제
-            
+            // 부모가 바뀌었을 수도 있으므로(다른 스크립트에서 SetParent 했을 경우), 
+            // 다시 원래 풀의 부모로 돌려놓는 것이 안전할 수 있으나, 
+            // UI의 경우 동적으로 부모를 바꾸는 경우가 많아 여기서는 강제하지 않음.
+            // 필요하다면 아래 주석 해제:
+            // if (_poolParents.ContainsKey(tag) && _poolParents[tag] != null)
+            //     objectToSpawn.transform.SetParent(_poolParents[tag]);
+
             return objectToSpawn;
         }
 
         public void ReturnToPool(string tag, GameObject obj)
         {
+            if (!_poolDictionary.ContainsKey(tag))
+            {
+                Debug.LogWarning($"[ObjectPooler] Pool with tag {tag} doesn't exist.");
+                // 풀에 없으면 그냥 파괴하거나 비활성화
+                obj.SetActive(false);
+                return;
+            }
+
             obj.SetActive(false);
-            obj.transform.SetParent(transform); // 다시 풀러 자식으로
+            
+            // 반환 시 원래 지정된 부모 밑으로 정리 (계층 구조 깔끔하게 유지)
+            if (_poolParents.ContainsKey(tag) && _poolParents[tag] != null)
+            {
+                obj.transform.SetParent(_poolParents[tag]);
+            }
+            else
+            {
+                obj.transform.SetParent(transform);
+            }
+
             _poolDictionary[tag].Enqueue(obj);
         }
     }

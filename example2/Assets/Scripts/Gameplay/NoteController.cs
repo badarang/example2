@@ -8,18 +8,28 @@ namespace RhythmGame
         private RhythmManager _rhythmManager;
         private ObjectPooler _pooler;
         private float _scrollSpeed;
+        private JudgeManager _judgeManager;
 
         // 판정선 위치 (Y축 0을 기준으로 함)
         private const float JUDGMENT_LINE_Y = 0f;
         // 화면 밖으로 나갔을 때 제거할 기준 시간 (Miss 판정 이후)
         private const float MISS_OFFSET = 0.5f;
 
-        public void Initialize(NoteData noteData, RhythmManager rhythmManager, ObjectPooler pooler, float scrollSpeed)
+        public NoteData NoteData => _noteData;
+
+        public void Initialize(NoteData noteData, RhythmManager rhythmManager, ObjectPooler pooler, float scrollSpeed, JudgeManager judgeManager)
         {
             _noteData = noteData;
             _rhythmManager = rhythmManager;
             _pooler = pooler;
             _scrollSpeed = scrollSpeed;
+            _judgeManager = judgeManager;
+
+            // 판정 매니저에 등록
+            if (_judgeManager != null)
+            {
+                _judgeManager.RegisterNote(_noteData.Lane, this);
+            }
         }
 
         private void Update()
@@ -43,6 +53,12 @@ namespace RhythmGame
             {
                 Deactivate();
             }
+        }
+
+        public void OnHit()
+        {
+            // 판정 성공 시 호출됨 -> 즉시 제거
+            Deactivate();
         }
 
         private void Deactivate()
