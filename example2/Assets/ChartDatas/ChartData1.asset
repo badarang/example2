@@ -1,0 +1,1578 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b49286c682de74488ff382191516a75, type: 3}
+  m_Name: ChartData1
+  m_EditorClassIdentifier: 
+  _songName: bgm1
+  _bpm: 120
+  _baseScrollSpeed: 10
+  _notes:
+  - _time: 3.2066667
+    _lane: 0
+  - _time: 3.5693333
+    _lane: 2
+  - _time: 4.1666665
+    _lane: 1
+  - _time: 4.358667
+    _lane: 3
+  - _time: 4.5933332
+    _lane: 0
+  - _time: 4.806667
+    _lane: 2
+  - _time: 5.041333
+    _lane: 1
+  - _time: 5.3613334
+    _lane: 1
+  - _time: 5.745333
+    _lane: 2
+  - _time: 5.8093333
+    _lane: 0
+  - _time: 5.8733335
+    _lane: 3
+  - _time: 5.937333
+    _lane: 1
+  - _time: 6.172
+    _lane: 2
+  - _time: 6.4066668
+    _lane: 0
+  - _time: 6.641333
+    _lane: 2
+  - _time: 6.705333
+    _lane: 0
+  - _time: 7.132
+    _lane: 2
+  - _time: 7.388
+    _lane: 1
+  - _time: 7.644
+    _lane: 3
+  - _time: 7.836
+    _lane: 1
+  - _time: 8.113334
+    _lane: 3
+  - _time: 8.156
+    _lane: 0
+  - _time: 8.454667
+    _lane: 2
+  - _time: 8.561334
+    _lane: 1
+  - _time: 9.052
+    _lane: 3
+  - _time: 9.329333
+    _lane: 0
+  - _time: 9.521334
+    _lane: 2
+  - _time: 9.713333
+    _lane: 1
+  - _time: 9.82
+    _lane: 3
+  - _time: 9.9053335
+    _lane: 0
+  - _time: 9.990666
+    _lane: 2
+  - _time: 10.097333
+    _lane: 1
+  - _time: 10.204
+    _lane: 3
+  - _time: 10.332
+    _lane: 0
+  - _time: 10.46
+    _lane: 2
+  - _time: 10.588
+    _lane: 1
+  - _time: 11.057333
+    _lane: 3
+  - _time: 11.334666
+    _lane: 3
+  - _time: 11.633333
+    _lane: 1
+  - _time: 11.889334
+    _lane: 3
+  - _time: 12.102667
+    _lane: 0
+  - _time: 12.316
+    _lane: 2
+  - _time: 12.401334
+    _lane: 1
+  - _time: 12.828
+    _lane: 2
+  - _time: 13.062667
+    _lane: 2
+  - _time: 13.276
+    _lane: 0
+  - _time: 13.532
+    _lane: 2
+  - _time: 13.638667
+    _lane: 1
+  - _time: 13.724
+    _lane: 2
+  - _time: 13.809334
+    _lane: 0
+  - _time: 14.108
+    _lane: 2
+  - _time: 14.342667
+    _lane: 1
+  - _time: 14.705334
+    _lane: 3
+  - _time: 14.961333
+    _lane: 3
+  - _time: 15.153334
+    _lane: 3
+  - _time: 15.388
+    _lane: 3
+  - _time: 15.409333
+    _lane: 0
+  - _time: 15.793333
+    _lane: 0
+  - _time: 15.814667
+    _lane: 3
+  - _time: 16.156
+    _lane: 0
+  - _time: 16.156
+    _lane: 3
+  - _time: 16.582666
+    _lane: 0
+  - _time: 16.582666
+    _lane: 3
+  - _time: 16.86
+    _lane: 0
+  - _time: 16.86
+    _lane: 3
+  - _time: 17.073334
+    _lane: 0
+  - _time: 17.073334
+    _lane: 3
+  - _time: 17.286667
+    _lane: 0
+  - _time: 17.286667
+    _lane: 3
+  - _time: 17.798666
+    _lane: 2
+  - _time: 17.82
+    _lane: 1
+  - _time: 18.268
+    _lane: 0
+  - _time: 18.502666
+    _lane: 2
+  - _time: 18.588
+    _lane: 1
+  - _time: 18.673334
+    _lane: 3
+  - _time: 18.758667
+    _lane: 0
+  - _time: 18.822666
+    _lane: 2
+  - _time: 18.972
+    _lane: 1
+  - _time: 19.057333
+    _lane: 2
+  - _time: 19.206667
+    _lane: 2
+  - _time: 19.441334
+    _lane: 2
+  - _time: 19.633333
+    _lane: 1
+  - _time: 19.910667
+    _lane: 3
+  - _time: 20.145334
+    _lane: 3
+  - _time: 20.401333
+    _lane: 0
+  - _time: 20.486666
+    _lane: 2
+  - _time: 20.593334
+    _lane: 1
+  - _time: 20.828
+    _lane: 3
+  - _time: 21.062666
+    _lane: 0
+  - _time: 21.318666
+    _lane: 2
+  - _time: 21.382668
+    _lane: 1
+  - _time: 21.553333
+    _lane: 3
+  - _time: 21.766666
+    _lane: 0
+  - _time: 22.022667
+    _lane: 2
+  - _time: 22.236
+    _lane: 2
+  - _time: 22.342667
+    _lane: 1
+  - _time: 22.449333
+    _lane: 3
+  - _time: 22.577333
+    _lane: 0
+  - _time: 22.662666
+    _lane: 2
+  - _time: 22.769333
+    _lane: 1
+  - _time: 22.897333
+    _lane: 3
+  - _time: 23.174667
+    _lane: 3
+  - _time: 23.302668
+    _lane: 1
+  - _time: 23.409334
+    _lane: 3
+  - _time: 23.644
+    _lane: 1
+  - _time: 23.836
+    _lane: 3
+  - _time: 24.113333
+    _lane: 3
+  - _time: 24.326666
+    _lane: 0
+  - _time: 24.582666
+    _lane: 0
+  - _time: 24.817333
+    _lane: 2
+  - _time: 25.052
+    _lane: 0
+  - _time: 25.137333
+    _lane: 2
+  - _time: 25.244
+    _lane: 0
+  - _time: 25.542667
+    _lane: 3
+  - _time: 25.756
+    _lane: 1
+  - _time: 26.054667
+    _lane: 2
+  - _time: 26.161333
+    _lane: 0
+  - _time: 26.225334
+    _lane: 3
+  - _time: 26.374666
+    _lane: 1
+  - _time: 26.46
+    _lane: 2
+  - _time: 26.588
+    _lane: 0
+  - _time: 26.694666
+    _lane: 3
+  - _time: 27.014668
+    _lane: 3
+  - _time: 27.121334
+    _lane: 1
+  - _time: 27.185333
+    _lane: 3
+  - _time: 27.441334
+    _lane: 1
+  - _time: 27.697332
+    _lane: 3
+  - _time: 27.932
+    _lane: 3
+  - _time: 28.145334
+    _lane: 3
+  - _time: 28.401333
+    _lane: 3
+  - _time: 28.614666
+    _lane: 0
+  - _time: 28.828
+    _lane: 2
+  - _time: 28.956
+    _lane: 1
+  - _time: 29.02
+    _lane: 3
+  - _time: 29.126667
+    _lane: 0
+  - _time: 29.233334
+    _lane: 2
+  - _time: 29.34
+    _lane: 1
+  - _time: 29.446667
+    _lane: 3
+  - _time: 29.958666
+    _lane: 3
+  - _time: 30.534666
+    _lane: 3
+  - _time: 30.598667
+    _lane: 1
+  - _time: 30.705334
+    _lane: 2
+  - _time: 30.833334
+    _lane: 0
+  - _time: 30.961334
+    _lane: 2
+  - _time: 31.494667
+    _lane: 2
+  - _time: 31.601334
+    _lane: 0
+  - _time: 31.686666
+    _lane: 2
+  - _time: 31.793333
+    _lane: 0
+  - _time: 31.878666
+    _lane: 2
+  - _time: 32.476
+    _lane: 1
+  - _time: 32.58267
+    _lane: 3
+  - _time: 32.710667
+    _lane: 1
+  - _time: 32.817333
+    _lane: 2
+  - _time: 32.924
+    _lane: 0
+  - _time: 33.030666
+    _lane: 3
+  - _time: 33.15867
+    _lane: 1
+  - _time: 33.265335
+    _lane: 2
+  - _time: 33.372
+    _lane: 0
+  - _time: 33.798668
+    _lane: 3
+  - _time: 34.310665
+    _lane: 1
+  - _time: 34.822666
+    _lane: 2
+  - _time: 35.292
+    _lane: 0
+  - _time: 35.74
+    _lane: 3
+  - _time: 36.230667
+    _lane: 1
+  - _time: 36.657333
+    _lane: 2
+  - _time: 37.084
+    _lane: 0
+  - _time: 37.638668
+    _lane: 3
+  - _time: 38.086666
+    _lane: 1
+  - _time: 38.598667
+    _lane: 2
+  - _time: 39.046665
+    _lane: 0
+  - _time: 39.537334
+    _lane: 3
+  - _time: 40.028
+    _lane: 1
+  - _time: 40.262665
+    _lane: 3
+  - _time: 40.369335
+    _lane: 0
+  - _time: 40.454666
+    _lane: 2
+  - _time: 40.710667
+    _lane: 1
+  - _time: 40.966667
+    _lane: 3
+  - _time: 41.222668
+    _lane: 0
+  - _time: 41.308
+    _lane: 2
+  - _time: 41.414665
+    _lane: 1
+  - _time: 41.670666
+    _lane: 3
+  - _time: 41.926666
+    _lane: 0
+  - _time: 42.182667
+    _lane: 2
+  - _time: 42.310665
+    _lane: 1
+  - _time: 42.396
+    _lane: 3
+  - _time: 42.630665
+    _lane: 0
+  - _time: 42.886665
+    _lane: 2
+  - _time: 43.142666
+    _lane: 1
+  - _time: 43.270668
+    _lane: 3
+  - _time: 43.334667
+    _lane: 0
+  - _time: 43.590668
+    _lane: 2
+  - _time: 43.804
+    _lane: 0
+  - _time: 44.038666
+    _lane: 2
+  - _time: 44.145332
+    _lane: 0
+  - _time: 44.20933
+    _lane: 2
+  - _time: 44.486668
+    _lane: 1
+  - _time: 44.7
+    _lane: 3
+  - _time: 44.806667
+    _lane: 0
+  - _time: 44.913334
+    _lane: 2
+  - _time: 45.062668
+    _lane: 1
+  - _time: 45.148
+    _lane: 3
+  - _time: 45.254665
+    _lane: 0
+  - _time: 45.382668
+    _lane: 2
+  - _time: 45.489334
+    _lane: 1
+  - _time: 45.617332
+    _lane: 3
+  - _time: 45.724
+    _lane: 0
+  - _time: 45.852
+    _lane: 2
+  - _time: 45.98
+    _lane: 1
+  - _time: 46.044
+    _lane: 3
+  - _time: 46.172
+    _lane: 0
+  - _time: 46.278667
+    _lane: 2
+  - _time: 46.385334
+    _lane: 1
+  - _time: 46.513332
+    _lane: 3
+  - _time: 46.748
+    _lane: 3
+  - _time: 46.982666
+    _lane: 1
+  - _time: 47.217335
+    _lane: 2
+  - _time: 47.302666
+    _lane: 0
+  - _time: 47.409332
+    _lane: 3
+  - _time: 47.558666
+    _lane: 1
+  - _time: 47.878666
+    _lane: 2
+  - _time: 48.070667
+    _lane: 0
+  - _time: 48.305332
+    _lane: 3
+  - _time: 48.497334
+    _lane: 1
+  - _time: 48.753334
+    _lane: 2
+  - _time: 48.881332
+    _lane: 0
+  - _time: 48.94533
+    _lane: 3
+  - _time: 49.222668
+    _lane: 1
+  - _time: 49.414665
+    _lane: 2
+  - _time: 49.713333
+    _lane: 0
+  - _time: 49.82
+    _lane: 3
+  - _time: 49.948
+    _lane: 1
+  - _time: 50.118668
+    _lane: 2
+  - _time: 50.37467
+    _lane: 1
+  - _time: 50.630665
+    _lane: 1
+  - _time: 50.865334
+    _lane: 3
+  - _time: 51.1
+    _lane: 3
+  - _time: 51.31333
+    _lane: 0
+  - _time: 51.548
+    _lane: 2
+  - _time: 51.633335
+    _lane: 1
+  - _time: 51.761333
+    _lane: 3
+  - _time: 51.868
+    _lane: 0
+  - _time: 51.953335
+    _lane: 2
+  - _time: 52.102665
+    _lane: 1
+  - _time: 52.20933
+    _lane: 3
+  - _time: 52.721333
+    _lane: 3
+  - _time: 53.233334
+    _lane: 0
+  - _time: 53.489334
+    _lane: 2
+  - _time: 53.553333
+    _lane: 0
+  - _time: 53.66
+    _lane: 2
+  - _time: 53.98
+    _lane: 1
+  - _time: 54.428
+    _lane: 3
+  - _time: 54.641335
+    _lane: 0
+  - _time: 54.833332
+    _lane: 0
+  - _time: 55.089333
+    _lane: 2
+  - _time: 55.196
+    _lane: 1
+  - _time: 55.302666
+    _lane: 3
+  - _time: 55.388
+    _lane: 0
+  - _time: 55.47333
+    _lane: 2
+  - _time: 55.814667
+    _lane: 1
+  - _time: 56.028
+    _lane: 2
+  - _time: 56.561333
+    _lane: 2
+  - _time: 56.988
+    _lane: 2
+  - _time: 57.244
+    _lane: 0
+  - _time: 57.350666
+    _lane: 3
+  - _time: 57.436
+    _lane: 1
+  - _time: 57.692
+    _lane: 2
+  - _time: 58.204
+    _lane: 0
+  - _time: 58.41733
+    _lane: 3
+  - _time: 58.630665
+    _lane: 3
+  - _time: 58.865334
+    _lane: 1
+  - _time: 58.972
+    _lane: 3
+  - _time: 59.078667
+    _lane: 0
+  - _time: 59.206665
+    _lane: 2
+  - _time: 59.31333
+    _lane: 1
+  - _time: 59.548
+    _lane: 3
+  - _time: 59.782665
+    _lane: 0
+  - _time: 60.06
+    _lane: 2
+  - _time: 60.188
+    _lane: 1
+  - _time: 60.273335
+    _lane: 3
+  - _time: 60.465332
+    _lane: 0
+  - _time: 60.7
+    _lane: 2
+  - _time: 60.998665
+    _lane: 2
+  - _time: 61.105335
+    _lane: 1
+  - _time: 61.212
+    _lane: 3
+  - _time: 61.446667
+    _lane: 0
+  - _time: 61.937332
+    _lane: 2
+  - _time: 62.172
+    _lane: 1
+  - _time: 62.364
+    _lane: 1
+  - _time: 62.641335
+    _lane: 3
+  - _time: 62.726665
+    _lane: 0
+  - _time: 62.982666
+    _lane: 2
+  - _time: 63.132
+    _lane: 1
+  - _time: 63.238667
+    _lane: 3
+  - _time: 63.430668
+    _lane: 0
+  - _time: 63.644
+    _lane: 2
+  - _time: 63.836
+    _lane: 1
+  - _time: 63.942665
+    _lane: 3
+  - _time: 64.092
+    _lane: 0
+  - _time: 64.305336
+    _lane: 2
+  - _time: 64.476
+    _lane: 2
+  - _time: 64.753334
+    _lane: 1
+  - _time: 64.83867
+    _lane: 2
+  - _time: 64.945335
+    _lane: 1
+  - _time: 65.13734
+    _lane: 2
+  - _time: 65.436
+    _lane: 0
+  - _time: 65.692
+    _lane: 2
+  - _time: 65.79867
+    _lane: 1
+  - _time: 65.884
+    _lane: 2
+  - _time: 66.18266
+    _lane: 0
+  - _time: 66.396
+    _lane: 2
+  - _time: 66.524
+    _lane: 1
+  - _time: 66.63067
+    _lane: 3
+  - _time: 66.75867
+    _lane: 0
+  - _time: 66.86533
+    _lane: 2
+  - _time: 67.12133
+    _lane: 1
+  - _time: 67.31333
+    _lane: 2
+  - _time: 67.612
+    _lane: 2
+  - _time: 67.697334
+    _lane: 0
+  - _time: 67.82533
+    _lane: 2
+  - _time: 68.038666
+    _lane: 1
+  - _time: 68.27333
+    _lane: 2
+  - _time: 68.55067
+    _lane: 0
+  - _time: 68.65733
+    _lane: 2
+  - _time: 68.78533
+    _lane: 1
+  - _time: 69.041336
+    _lane: 2
+  - _time: 69.25467
+    _lane: 0
+  - _time: 69.510666
+    _lane: 2
+  - _time: 69.596
+    _lane: 1
+  - _time: 69.70267
+    _lane: 2
+  - _time: 69.93733
+    _lane: 0
+  - _time: 70.19334
+    _lane: 2
+  - _time: 70.3
+    _lane: 1
+  - _time: 70.40667
+    _lane: 2
+  - _time: 70.556
+    _lane: 1
+  - _time: 70.66267
+    _lane: 2
+  - _time: 70.876
+    _lane: 1
+  - _time: 71.132
+    _lane: 3
+  - _time: 71.60133
+    _lane: 3
+  - _time: 72.113335
+    _lane: 0
+  - _time: 72.348
+    _lane: 2
+  - _time: 72.454666
+    _lane: 1
+  - _time: 72.54
+    _lane: 3
+  - _time: 72.81734
+    _lane: 0
+  - _time: 73.00933
+    _lane: 2
+  - _time: 73.308
+    _lane: 1
+  - _time: 73.39333
+    _lane: 3
+  - _time: 73.5
+    _lane: 0
+  - _time: 73.734665
+    _lane: 2
+  - _time: 73.96933
+    _lane: 1
+  - _time: 74.097336
+    _lane: 3
+  - _time: 74.204
+    _lane: 0
+  - _time: 74.332
+    _lane: 2
+  - _time: 74.43867
+    _lane: 1
+  - _time: 74.566666
+    _lane: 3
+  - _time: 74.67333
+    _lane: 0
+  - _time: 74.82267
+    _lane: 2
+  - _time: 74.908
+    _lane: 1
+  - _time: 75.356
+    _lane: 3
+  - _time: 75.868
+    _lane: 1
+  - _time: 76.10267
+    _lane: 3
+  - _time: 76.23067
+    _lane: 1
+  - _time: 76.29467
+    _lane: 3
+  - _time: 76.59333
+    _lane: 1
+  - _time: 77.084
+    _lane: 3
+  - _time: 77.29733
+    _lane: 0
+  - _time: 77.510666
+    _lane: 0
+  - _time: 77.74533
+    _lane: 3
+  - _time: 77.852
+    _lane: 1
+  - _time: 77.958664
+    _lane: 3
+  - _time: 78.108
+    _lane: 1
+  - _time: 78.19334
+    _lane: 3
+  - _time: 78.470665
+    _lane: 0
+  - _time: 78.66267
+    _lane: 2
+  - _time: 79.17467
+    _lane: 1
+  - _time: 79.68667
+    _lane: 3
+  - _time: 79.9
+    _lane: 0
+  - _time: 80.00667
+    _lane: 2
+  - _time: 80.113335
+    _lane: 1
+  - _time: 80.36933
+    _lane: 3
+  - _time: 80.64667
+    _lane: 0
+  - _time: 80.83867
+    _lane: 2
+  - _time: 80.945335
+    _lane: 1
+  - _time: 81.03067
+    _lane: 2
+  - _time: 81.308
+    _lane: 1
+  - _time: 81.54266
+    _lane: 2
+  - _time: 81.64933
+    _lane: 0
+  - _time: 81.756
+    _lane: 2
+  - _time: 81.86266
+    _lane: 1
+  - _time: 81.948
+    _lane: 2
+  - _time: 82.054665
+    _lane: 0
+  - _time: 82.204
+    _lane: 2
+  - _time: 82.31067
+    _lane: 1
+  - _time: 82.417336
+    _lane: 2
+  - _time: 82.95067
+    _lane: 0
+  - _time: 83.228
+    _lane: 0
+  - _time: 83.42
+    _lane: 3
+  - _time: 83.65466
+    _lane: 1
+  - _time: 83.78267
+    _lane: 2
+  - _time: 83.889336
+    _lane: 0
+  - _time: 84.166664
+    _lane: 3
+  - _time: 84.444
+    _lane: 1
+  - _time: 84.55067
+    _lane: 2
+  - _time: 84.636
+    _lane: 0
+  - _time: 84.74267
+    _lane: 3
+  - _time: 84.849335
+    _lane: 1
+  - _time: 84.956
+    _lane: 2
+  - _time: 85.10533
+    _lane: 1
+  - _time: 85.212
+    _lane: 3
+  - _time: 85.361336
+    _lane: 1
+  - _time: 85.510666
+    _lane: 2
+  - _time: 85.61733
+    _lane: 0
+  - _time: 85.74533
+    _lane: 3
+  - _time: 85.852
+    _lane: 1
+  - _time: 86.108
+    _lane: 2
+  - _time: 86.3
+    _lane: 0
+  - _time: 86.70533
+    _lane: 2
+  - _time: 86.982666
+    _lane: 2
+  - _time: 87.21733
+    _lane: 0
+  - _time: 87.473335
+    _lane: 2
+  - _time: 87.53733
+    _lane: 0
+  - _time: 87.644
+    _lane: 2
+  - _time: 87.87867
+    _lane: 0
+  - _time: 88.156
+    _lane: 0
+  - _time: 88.156
+    _lane: 2
+  - _time: 88.348
+    _lane: 0
+  - _time: 88.39066
+    _lane: 2
+  - _time: 88.604
+    _lane: 1
+  - _time: 88.625336
+    _lane: 3
+  - _time: 88.83867
+    _lane: 1
+  - _time: 88.83867
+    _lane: 3
+  - _time: 89.07333
+    _lane: 0
+  - _time: 89.07333
+    _lane: 2
+  - _time: 89.28667
+    _lane: 0
+  - _time: 89.308
+    _lane: 2
+  - _time: 89.564
+    _lane: 1
+  - _time: 89.564
+    _lane: 3
+  - _time: 89.756
+    _lane: 1
+  - _time: 89.79867
+    _lane: 3
+  - _time: 90.03333
+    _lane: 0
+  - _time: 90.246666
+    _lane: 3
+  - _time: 90.374664
+    _lane: 1
+  - _time: 90.43867
+    _lane: 2
+  - _time: 90.716
+    _lane: 0
+  - _time: 90.972
+    _lane: 0
+  - _time: 90.99333
+    _lane: 3
+  - _time: 91.44133
+    _lane: 2
+  - _time: 91.46267
+    _lane: 1
+  - _time: 91.996
+    _lane: 0
+  - _time: 92.209335
+    _lane: 3
+  - _time: 92.316
+    _lane: 1
+  - _time: 92.38
+    _lane: 2
+  - _time: 92.636
+    _lane: 0
+  - _time: 92.892
+    _lane: 3
+  - _time: 93.041336
+    _lane: 0
+  - _time: 93.041336
+    _lane: 1
+  - _time: 93.10533
+    _lane: 2
+  - _time: 93.23333
+    _lane: 1
+  - _time: 93.44666
+    _lane: 0
+  - _time: 93.532
+    _lane: 3
+  - _time: 93.66
+    _lane: 1
+  - _time: 93.724
+    _lane: 2
+  - _time: 94.3
+    _lane: 0
+  - _time: 94.748
+    _lane: 2
+  - _time: 94.961334
+    _lane: 1
+  - _time: 95.068
+    _lane: 3
+  - _time: 95.196
+    _lane: 0
+  - _time: 95.452
+    _lane: 2
+  - _time: 95.72933
+    _lane: 1
+  - _time: 96.19867
+    _lane: 0
+  - _time: 96.19867
+    _lane: 3
+  - _time: 96.412
+    _lane: 0
+  - _time: 96.433334
+    _lane: 3
+  - _time: 96.64667
+    _lane: 0
+  - _time: 96.64667
+    _lane: 2
+  - _time: 96.86
+    _lane: 0
+  - _time: 96.86
+    _lane: 2
+  - _time: 97.094666
+    _lane: 1
+  - _time: 97.116
+    _lane: 3
+  - _time: 97.585335
+    _lane: 0
+  - _time: 97.86266
+    _lane: 2
+  - _time: 97.948
+    _lane: 1
+  - _time: 98.03333
+    _lane: 3
+  - _time: 98.28933
+    _lane: 1
+  - _time: 98.524
+    _lane: 3
+  - _time: 98.545334
+    _lane: 1
+  - _time: 98.75867
+    _lane: 1
+  - _time: 98.78
+    _lane: 3
+  - _time: 98.99333
+    _lane: 2
+  - _time: 98.99333
+    _lane: 0
+  - _time: 99.18533
+    _lane: 0
+  - _time: 99.206665
+    _lane: 2
+  - _time: 99.42
+    _lane: 1
+  - _time: 99.44133
+    _lane: 3
+  - _time: 99.95333
+    _lane: 0
+  - _time: 99.95333
+    _lane: 2
+  - _time: 100.14533
+    _lane: 0
+  - _time: 100.166664
+    _lane: 2
+  - _time: 100.40134
+    _lane: 1
+  - _time: 100.40134
+    _lane: 3
+  - _time: 100.61467
+    _lane: 1
+  - _time: 100.636
+    _lane: 3
+  - _time: 100.892
+    _lane: 1
+  - _time: 100.892
+    _lane: 3
+  - _time: 101.06267
+    _lane: 1
+  - _time: 101.084
+    _lane: 3
+  - _time: 101.318665
+    _lane: 3
+  - _time: 101.34
+    _lane: 1
+  - _time: 101.87334
+    _lane: 0
+  - _time: 101.87334
+    _lane: 2
+  - _time: 102.34267
+    _lane: 1
+  - _time: 102.62
+    _lane: 3
+  - _time: 102.684
+    _lane: 0
+  - _time: 102.790665
+    _lane: 2
+  - _time: 103.004
+    _lane: 1
+  - _time: 103.516
+    _lane: 3
+  - _time: 103.772
+    _lane: 0
+  - _time: 103.98534
+    _lane: 0
+  - _time: 104.22
+    _lane: 2
+  - _time: 104.32667
+    _lane: 1
+  - _time: 104.412
+    _lane: 3
+  - _time: 104.49733
+    _lane: 0
+  - _time: 104.604
+    _lane: 2
+  - _time: 104.924
+    _lane: 1
+  - _time: 105.414665
+    _lane: 3
+  - _time: 105.628
+    _lane: 0
+  - _time: 105.84133
+    _lane: 0
+  - _time: 106.097336
+    _lane: 2
+  - _time: 106.31067
+    _lane: 1
+  - _time: 106.396
+    _lane: 3
+  - _time: 106.48133
+    _lane: 0
+  - _time: 106.75867
+    _lane: 2
+  - _time: 107.292
+    _lane: 1
+  - _time: 107.50533
+    _lane: 2
+  - _time: 107.76133
+    _lane: 2
+  - _time: 107.97467
+    _lane: 0
+  - _time: 108.08134
+    _lane: 3
+  - _time: 108.23067
+    _lane: 1
+  - _time: 108.29467
+    _lane: 2
+  - _time: 108.42267
+    _lane: 0
+  - _time: 108.529335
+    _lane: 3
+  - _time: 108.65733
+    _lane: 1
+  - _time: 108.764
+    _lane: 2
+  - _time: 108.849335
+    _lane: 0
+  - _time: 109.404
+    _lane: 2
+  - _time: 109.638664
+    _lane: 2
+  - _time: 109.87334
+    _lane: 1
+  - _time: 110.12933
+    _lane: 2
+  - _time: 110.21467
+    _lane: 1
+  - _time: 110.321335
+    _lane: 2
+  - _time: 110.57733
+    _lane: 1
+  - _time: 111.04667
+    _lane: 3
+  - _time: 111.281334
+    _lane: 0
+  - _time: 111.53733
+    _lane: 0
+  - _time: 111.772
+    _lane: 0
+  - _time: 111.793335
+    _lane: 2
+  - _time: 111.98534
+    _lane: 2
+  - _time: 112.113335
+    _lane: 1
+  - _time: 112.49733
+    _lane: 2
+  - _time: 112.668
+    _lane: 0
+  - _time: 113.03067
+    _lane: 3
+  - _time: 113.265335
+    _lane: 1
+  - _time: 113.45734
+    _lane: 2
+  - _time: 113.67067
+    _lane: 0
+  - _time: 113.92667
+    _lane: 3
+  - _time: 114.03333
+    _lane: 1
+  - _time: 114.076
+    _lane: 2
+  - _time: 114.43867
+    _lane: 1
+  - _time: 114.67333
+    _lane: 3
+  - _time: 114.75867
+    _lane: 1
+  - _time: 114.86533
+    _lane: 3
+  - _time: 114.972
+    _lane: 1
+  - _time: 115.07867
+    _lane: 3
+  - _time: 115.164
+    _lane: 1
+  - _time: 115.292
+    _lane: 3
+  - _time: 115.356
+    _lane: 1
+  - _time: 115.50533
+    _lane: 2
+  - _time: 116.038666
+    _lane: 0
+  - _time: 116.508
+    _lane: 3
+  - _time: 116.529335
+    _lane: 0
+  - _time: 116.998665
+    _lane: 1
+  - _time: 116.998665
+    _lane: 2
+  - _time: 117.489334
+    _lane: 0
+  - _time: 117.489334
+    _lane: 3
+  - _time: 117.74533
+    _lane: 0
+  - _time: 117.76667
+    _lane: 3
+  - _time: 117.87334
+    _lane: 0
+  - _time: 117.89467
+    _lane: 3
+  - _time: 118.150665
+    _lane: 1
+  - _time: 118.150665
+    _lane: 2
+  - _time: 118.66267
+    _lane: 0
+  - _time: 118.66267
+    _lane: 3
+  - _time: 118.876
+    _lane: 1
+  - _time: 118.876
+    _lane: 2
+  - _time: 119.110664
+    _lane: 1
+  - _time: 119.132
+    _lane: 2
+  - _time: 119.324
+    _lane: 0
+  - _time: 119.34534
+    _lane: 3
+  - _time: 119.53733
+    _lane: 1
+  - _time: 119.53733
+    _lane: 2
+  - _time: 119.622665
+    _lane: 0
+  - _time: 119.66534
+    _lane: 3
+  - _time: 119.98534
+    _lane: 1
+  - _time: 119.98534
+    _lane: 2
+  - _time: 120.582664
+    _lane: 0
+  - _time: 120.582664
+    _lane: 3
+  - _time: 120.774666
+    _lane: 1
+  - _time: 120.774666
+    _lane: 2
+  - _time: 120.988
+    _lane: 1
+  - _time: 121.03067
+    _lane: 2
+  - _time: 121.20133
+    _lane: 0
+  - _time: 121.222664
+    _lane: 3
+  - _time: 121.54266
+    _lane: 1
+  - _time: 121.54266
+    _lane: 2
+  - _time: 121.60667
+    _lane: 0
+  - _time: 121.64933
+    _lane: 3
+  - _time: 121.84133
+    _lane: 2
+  - _time: 121.86266
+    _lane: 1
+  - _time: 122.35333
+    _lane: 0
+  - _time: 122.396
+    _lane: 3
+  - _time: 122.566666
+    _lane: 1
+  - _time: 122.588
+    _lane: 2
+  - _time: 122.80133
+    _lane: 1
+  - _time: 122.844
+    _lane: 2
+  - _time: 123.07867
+    _lane: 0
+  - _time: 123.33466
+    _lane: 3
+  - _time: 123.46267
+    _lane: 1
+  - _time: 123.569336
+    _lane: 2
+  - _time: 123.804
+    _lane: 0
+  - _time: 124.06
+    _lane: 3
+  - _time: 124.508
+    _lane: 2
+  - _time: 124.508
+    _lane: 1
+  - _time: 125.06267
+    _lane: 0
+  - _time: 125.276
+    _lane: 3
+  - _time: 125.38267
+    _lane: 1
+  - _time: 125.42533
+    _lane: 2
+  - _time: 125.724
+    _lane: 0
+  - _time: 126.172
+    _lane: 3
+  - _time: 126.19334
+    _lane: 0
+  - _time: 126.38533
+    _lane: 1
+  - _time: 126.38533
+    _lane: 2
+  - _time: 126.59866
+    _lane: 1
+  - _time: 126.62
+    _lane: 2
+  - _time: 126.876
+    _lane: 0
+  - _time: 127.132
+    _lane: 3
+  - _time: 127.196
+    _lane: 1
+  - _time: 127.281334
+    _lane: 2
+  - _time: 127.58
+    _lane: 0
+  - _time: 127.836
+    _lane: 3
+  - _time: 128.092
+    _lane: 3
+  - _time: 128.348
+    _lane: 1
+  - _time: 128.51866
+    _lane: 1
+  - _time: 128.77467
+    _lane: 2
+  - _time: 128.86
+    _lane: 0
+  - _time: 128.96666
+    _lane: 3
+  - _time: 129.07333
+    _lane: 1
+  - _time: 129.15866
+    _lane: 2
+  - _time: 129.41467
+    _lane: 0
+  - _time: 129.90533
+    _lane: 3
+  - _time: 129.92667
+    _lane: 0
+  - _time: 130.16133
+    _lane: 1
+  - _time: 130.16133
+    _lane: 2
+  - _time: 130.35333
+    _lane: 2
+  - _time: 130.37466
+    _lane: 1
+  - _time: 130.652
+    _lane: 0
+  - _time: 130.86533
+    _lane: 2
+  - _time: 130.99333
+    _lane: 1
+  - _time: 131.07866
+    _lane: 2
+  - _time: 131.31334
+    _lane: 0
+  - _time: 131.59067
+    _lane: 0
+  - _time: 131.612
+    _lane: 1
+  - _time: 131.612
+    _lane: 2
+  - _time: 131.612
+    _lane: 3
+  - _time: 132.08133
+    _lane: 2
+  - _time: 132.10266
+    _lane: 0
+  - _time: 132.10266
+    _lane: 1
+  - _time: 132.10266
+    _lane: 3
+  - _time: 132.572
+    _lane: 0
+  - _time: 132.572
+    _lane: 1
+  - _time: 132.572
+    _lane: 2
+  - _time: 132.572
+    _lane: 3
+  - _time: 133.06267
+    _lane: 0
+  - _time: 133.06267
+    _lane: 2
+  - _time: 133.06267
+    _lane: 3
+  - _time: 133.084
+    _lane: 1
+  - _time: 133.276
+    _lane: 2
+  - _time: 133.276
+    _lane: 3
+  - _time: 133.29733
+    _lane: 0
+  - _time: 133.31866
+    _lane: 1
+  - _time: 133.80933
+    _lane: 0
+  - _time: 133.80933
+    _lane: 1
+  - _time: 133.80933
+    _lane: 2
+  - _time: 133.80933
+    _lane: 3
+  - _time: 134.02266
+    _lane: 0
+  - _time: 134.02266
+    _lane: 1
+  - _time: 134.02266
+    _lane: 2
+  - _time: 134.02266
+    _lane: 3
+  - _time: 134.236
+    _lane: 0
+  - _time: 134.236
+    _lane: 1
+  - _time: 134.236
+    _lane: 2
+  - _time: 134.236
+    _lane: 3
+  - _time: 134.492
+    _lane: 1
+  - _time: 134.492
+    _lane: 3
+  - _time: 134.72667
+    _lane: 2
+  - _time: 134.83333
+    _lane: 0
+  - _time: 134.89734
+    _lane: 3
+  - _time: 135.08934
+    _lane: 1
+  - _time: 135.324
+    _lane: 2
+  - _time: 135.708
+    _lane: 0
+  - _time: 135.9
+    _lane: 2
+  - _time: 136.092
+    _lane: 2
+  - _time: 136.348
+    _lane: 1
+  - _time: 136.56134
+    _lane: 3
+  - _time: 136.668
+    _lane: 0
+  - _time: 136.75333
+    _lane: 2
+  - _time: 137.07333
+    _lane: 1
+  - _time: 137.308
+    _lane: 2
+  - _time: 137.41467
+    _lane: 0
+  - _time: 137.52133
+    _lane: 3
+  - _time: 137.64934
+    _lane: 1
+  - _time: 137.71333
+    _lane: 2
+  - _time: 137.884
+    _lane: 0
+  - _time: 137.99066
+    _lane: 3
+  - _time: 138.09734
+    _lane: 1
+  - _time: 138.18266
+    _lane: 2
+  - _time: 138.48134
+    _lane: 3
+  - _time: 138.56667
+    _lane: 1
+  - _time: 138.67334
+    _lane: 2
+  - _time: 138.95067
+    _lane: 0
+  - _time: 139.164
+    _lane: 3
+  - _time: 139.63333
+    _lane: 1
+  - _time: 139.63333
+    _lane: 3
+  - _time: 140.14534
+    _lane: 0
+  - _time: 140.16667
+    _lane: 2
+  - _time: 140.316
+    _lane: 1
+  - _time: 140.444
+    _lane: 3
+  - _time: 140.55066
+    _lane: 0
+  - _time: 140.828
+    _lane: 2
+  - _time: 141.276
+    _lane: 1
+  - _time: 141.532
+    _lane: 2
+  - _time: 141.74533
+    _lane: 2
+  - _time: 141.98
+    _lane: 0
+  - _time: 142.236
+    _lane: 3
+  - _time: 142.32133
+    _lane: 1
+  - _time: 142.40666
+    _lane: 2
+  - _time: 142.70534
+    _lane: 0
+  - _time: 142.98267
+    _lane: 3
+  - _time: 143.08934
+    _lane: 1
+  - _time: 143.17467
+    _lane: 2
+  - _time: 143.30267
+    _lane: 0
+  - _time: 143.40933
+    _lane: 3
+  - _time: 143.62267
+    _lane: 1
+  - _time: 143.9
+    _lane: 3
+  - _time: 144.30533
+    _lane: 3
+  - _time: 144.62534
+    _lane: 3
+  - _time: 144.71066
+    _lane: 3
+  - _time: 145.07333
+    _lane: 0
+  - _time: 145.308
+    _lane: 2
+  - _time: 145.52133
+    _lane: 2
+  - _time: 145.77733
+    _lane: 1
+  - _time: 146.03334
+    _lane: 2
+  - _time: 146.11867
+    _lane: 0
+  - _time: 146.24667
+    _lane: 3
+  - _time: 146.50267
+    _lane: 1
+  - _time: 146.75867
+    _lane: 2
+  - _time: 147.228
+    _lane: 0
+  - _time: 147.74
+    _lane: 3
+  - _time: 148.16667
+    _lane: 1
+  - _time: 148.46533
+    _lane: 2
+  - _time: 148.97734
+    _lane: 0
+  - _time: 149.19067
+    _lane: 3
+  - _time: 149.42534
+    _lane: 3
+  - _time: 149.66
+    _lane: 1
+  - _time: 149.89467
+    _lane: 2
+  - _time: 150.00133
+    _lane: 0
+  - _time: 150.08667
+    _lane: 3
+  - _time: 150.364
+    _lane: 1
+  - _time: 150.64133
+    _lane: 0
+  - _time: 150.64133
+    _lane: 1
+  - _time: 150.64133
+    _lane: 2
+  - _time: 150.64133
+    _lane: 3
